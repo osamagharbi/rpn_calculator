@@ -7,6 +7,9 @@
 
 The RPN (Reverse Polish Notation) Calculator app allows users to perform calculations using the RPN method, view their calculation history, and download their calculations as a CSV file.
 
+
+![Demo of the RPN Calculator](./RPN_calculator_gif.gif)
+
   
 
 ## Table of Contents
