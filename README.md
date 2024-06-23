@@ -38,7 +38,7 @@ The RPN (Reverse Polish Notation) Calculator app allows users to perform calcula
 
   
 
-This application includes a backend built with FastAPI, a frontend built with HTML, CSS, and JavaScript, and uses Docker for containerization. The backend includes an API to perform RPN calculations, retrieve calculation history, and export data as CSV.
+This application includes a backend built with FastAPI, PostgreSQL,a frontend built with HTML, CSS, and JavaScript, and uses Docker for containerization. The backend includes an API to perform RPN calculations, retrieve calculation history, and export data as CSV.
 
   
 
@@ -129,10 +129,6 @@ POSTGRES_USER=user
 POSTGRES_PASSWORD=password
 
 POSTGRES_DB=dbname
-
-POSTGRES_HOST=db
-
-POSTGRES_PORT=5432
 
 ```
 
@@ -271,16 +267,6 @@ docker exec -it rpn-calculator-img-id /bin/sh
 ```sh
 
 python -m unittest discover -s tests
-
-```
-
-  
-
-3.  **Run integration tests:**
-
-```sh
-
-pytest tests/
 
 ```
 
